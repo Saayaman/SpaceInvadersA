@@ -61,8 +61,8 @@ public class Board extends JPanel implements Common, KeyListener {
 
         aliens = new ArrayList<>();
 
-        for (int row=0;row<6;row++) {
-            for (int column=0;column<10;column++) {
+        for (int row=0;row<10;row++) {
+            for (int column=0;column<8;column++) {
                 Alien enemy = new Alien(ENEMY_initX + 50 * column, ENEMY_initY + 35 * row);
                 aliens.add(enemy);
             }
